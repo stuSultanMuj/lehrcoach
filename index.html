@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lehrcoach.ch - Static Replica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                    <div class="logo-icon">L</div>
+                    <div class="logo-text">LehrCoach</div>
+                </a>
+            </div>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#features" onclick="scrollToSection('features'); switchTab('lernende'); return false;">Für Lernende</a>
+                <a class="nav-link" href="#features" onclick="scrollToSection('features'); switchTab('schulen'); return false;">Für Schulen</a>
+                <a class="nav-link" href="#features" onclick="scrollToSection('features'); switchTab('unternehmen'); return false;">Für Unternehmen</a>
+            </div>
+            <button class="navbar-cta">Jetzt testen</button>
+            <button class="navbar-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">Die neue Generation der Lehrstellensuche</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-gradient">Dein Einstieg</span> in die Berufswelt
+                    <br>
+                    von A bis Z begleitet
+                </h1>
+                <p class="hero-description">
+                    Von der Lehrstellensuche über die Bewerbung bis zum erfolgreichen Abschluss – LehrCoach ist dein persönlicher Begleiter durch die gesamte Lehrzeit.
+                </p>
+                <div class="hero-ctas">
+                    <button class="cta-button">Jetzt testen ⚡</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">5000+</div>
+                        <div class="stat-label">Lehrstellen</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">Schulen</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">95%</div>
+                        <div class="stat-label">Erfolgsquote</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <div class="card-info">
+                            <h3>Dein Fortschritt</h3>
+                            <p>Aktualisiert vor 5 Min.</p>
+                        </div>
+                    </div>
+                    <div class="card-item blue-gradient">
+                        <div class="card-item-icon">✅</div>
+                        <div class="card-item-content">
+                            <div class="card-item-title">Lebenslauf erstellt</div>
+                            <div class="card-item-desc">KI-optimiert und überprüft</div>
+                        </div>
+                        <div class="card-item-percent">100%</div>
+                    </div>
+                    <div class="card-item cyan-gradient">
+                        <div class="card-item-icon">◉</div>
+                        <div class="card-item-content">
+                            <div class="card-item-title">8 Bewerbungen versendet</div>
+                            <div class="card-item-desc">3 Rückmeldungen ausstehend</div>
+                        </div>
+                        <div class="card-item-percent">38%</div>
+                    </div>
+                    <div class="card-item orange-gradient">
+                        <div class="card-item-icon">✨</div>
+                        <div class="card-item-content">
+                            <div class="card-item-title">Nächster Schritt</div>
+                            <div class="card-item-desc">Vorstellungsgespräch vorbereiten</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY SECTION -->
+    <section class="journey" id="journey">
+        <div class="journey-container">
+            <div class="journey-header">
+                <div class="section-badge">🚀 Deine Reise</div>
+                <h2 class="section-title">Von der Suche zum Erfolg</h2>
+                <p class="section-desc">
+                    Wir begleiten dich durch jeden Schritt deiner Lehrstellensuche und darüber hinaus
+                </p>
+            </div>
+
+            <div class="journey-steps" id="journeySteps">
+                <!-- Steps populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="features-header">
+                <div class="section-badge">👥 Für alle Beteiligten</div>
+                <h2 class="section-title">Ein Ökosystem für alle</h2>
+                <p class="section-desc">
+                    Lernende, Schulen, Unternehmen – alle profitieren von unserer vernetzten Plattform
+                </p>
+            </div>
+
+            <div class="tabs-nav">
+                <button class="tab-button lernende active" onclick="switchTab('lernende')">Für Lernende</button>
+                <button class="tab-button schulen" onclick="switchTab('schulen')">Für Schulen</button>
+                <button class="tab-button unternehmen" onclick="switchTab('unternehmen')">Für Unternehmen</button>
+            </div>
+
+            <!-- LERNENDE TAB -->
+            <div class="tab-content active feature-grid" id="lernende">
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon blue">🔍</div>
+                        <div>
+                            <div class="feature-title">Intelligente Suche</div>
+                            <div class="feature-desc">Finde deine Traumlehrstelle mit KI-gestützten Vorschlägen und Smart-Filtern</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon cyan">📄</div>
+                        <div>
+                            <div class="feature-title">Bewerbungs-Assistent</div>
+                            <div class="feature-desc">Professionelle Dokumente in Minuten erstellen und optimieren</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon teal">🎯</div>
+                        <div>
+                            <div class="feature-title">Fortschritts-Tracking</div>
+                            <div class="feature-desc">Behalte den Überblick über alle Bewerbungen und Termine</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-visual blue-variant">
+                    <div class="feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-card-icon" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">🏢</div>
+                            <div>
+                                <div class="feature-card-title">Kaufmann/-frau EFZ</div>
+                                <div class="feature-card-desc">UBS AG, Zürich</div>
+                            </div>
+                        </div>
+                        <div class="feature-badges">
+                            <span class="badge blue">Vollzeit</span>
+                            <span class="badge emerald">Start Aug 2026</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-card-icon" style="background: linear-gradient(135deg, #06b6d4, #0d9488);">🏢</div>
+                            <div>
+                                <div class="feature-card-title">Informatiker/-in EFZ</div>
+                                <div class="feature-card-desc">Google Switzerland, Zürich</div>
+                            </div>
+                        </div>
+                        <div class="feature-badges">
+                            <span class="badge blue">Vollzeit</span>
+                            <span class="badge emerald">Start Aug 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCHULEN TAB -->
+            <div class="tab-content feature-grid" id="schulen" style="display: none;">
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon cyan">👥</div>
+                        <div>
+                            <div class="feature-title">Klassenübersicht</div>
+                            <div class="feature-desc">Behalten Sie den Überblick über den Bewerbungsfortschritt aller Schüler</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon teal">📚</div>
+                        <div>
+                            <div class="feature-title">Individuelle Unterstützung</div>
+                            <div class="feature-desc">Gezielte Hilfe für Schüler, die Unterstützung benötigen</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon cyan">🏆</div>
+                        <div>
+                            <div class="feature-title">Reporting & Analytics</div>
+                            <div class="feature-desc">Detaillierte Berichte für Schulleitung und Eltern</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-visual cyan-variant">
+                    <div class="feature-card">
+                        <div class="feature-card-title">Klasse 3B - Fortschritt</div>
+                        <div style="margin-top: 16px;">
+                            <div class="feature-card">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 14px; color: #1e293b;">12 Schüler mit Lehrstelle</span>
+                                    <span style="font-size: 14px; font-weight: bold; color: #10b981;">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 14px; color: #1e293b;">5 Schüler in Bewerbung</span>
+                                    <span style="font-size: 14px; font-weight: bold; color: #f59e0b;">25%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%; background: linear-gradient(90deg, #f59e0b, #f97316);"></div>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 14px; color: #1e293b;">3 Schüler brauchen Hilfe</span>
+                                    <span style="font-size: 14px; font-weight: bold; color: #ef4444;">15%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 15%; background: linear-gradient(90deg, #ef4444, #dc2626);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNTERNEHMEN TAB -->
+            <div class="tab-content feature-grid" id="unternehmen" style="display: none;">
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon teal">🏗️</div>
+                        <div>
+                            <div class="feature-title">Lehrstellen publizieren</div>
+                            <div class="feature-desc">Erreichen Sie qualifizierte Kandidaten auf der größten Plattform</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon cyan">👥</div>
+                        <div>
+                            <div class="feature-title">Bewerbermanagement</div>
+                            <div class="feature-desc">Organisieren Sie Bewerbungen effizient an einem Ort</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon teal">🏆</div>
+                        <div>
+                            <div class="feature-title">Lehrlings-Support</div>
+                            <div class="feature-desc">Digitale Zusammenarbeit während der gesamten Lehrzeit</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-visual teal-variant">
+                    <div class="feature-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                            <div class="feature-card-title">Ihre Lehrstellen</div>
+                        </div>
+                        <div class="feature-card" style="border: 2px solid #dbeafe;">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                                <div class="feature-card-title">Kaufmann/-frau EFZ</div>
+                                <span class="badge emerald">Aktiv</span>
+                            </div>
+                            <div class="feature-card-desc">45 Bewerbungen • 12 in Prüfung</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="cta-icon">✨</div>
+            <h2 class="cta-title">Bereit für deine Zukunft?</h2>
+            <p class="cta-desc">
+                Starte jetzt deine Reise zur Traumlehrstelle – kostenlos und unverbindlich
+            </p>
+            <button class="cta-button-white">Jetzt testen ⚡</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">L</div>
+                        <div class="footer-logo-text">LehrCoach</div>
+                    </div>
+                    <p class="footer-desc">
+                        Die führende Plattform für Lehrstellensuche und Berufsbildung in der Schweiz
+                    </p>
+                    <div class="footer-social">
+                        <div class="social-icon">𝕏</div>
+                        <div class="social-icon">in</div>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="footer-section">
+                    <h3>Produkt</h3>
+                    <a class="footer-link" href="#">Funktionen</a>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a class="footer-link" href="#">Hilfe</a>
+                    <a class="footer-link" href="#">Kontakt</a>
+                    <a class="footer-link" href="#">Dokumentation</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a class="footer-link" href="#">Datenschutz</a>
+                    <a class="footer-link" href="#">AGB</a>
+                    <a class="footer-link" href="#">Impressum</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 LehrCoach – Alle Rechte vorbehalten
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
